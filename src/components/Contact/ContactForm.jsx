@@ -17,7 +17,7 @@ justify-content: center;
 `
 ;
 
-const ImageContainer = styled.a`
+const ImageContainer = styled.img`
 height: 550px;
 width: 550px;
 border-radius: 50%;
@@ -83,7 +83,7 @@ function ContactForm() {
         
         <Container>
             <Wrapper>
-<ImageContainer src="https://assets2.lottiefiles.com/private_files/lf30_kxzary5v.json">
+<ImageContainer src="https://i.ibb.co/gZYX7Gb/jonathan-farber-Tht21-XTk-QE-unsplash.jpg">
 
 </ImageContainer>
             
