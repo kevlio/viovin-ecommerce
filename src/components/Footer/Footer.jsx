@@ -37,7 +37,7 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-left: 25em;
+ 
 `;
 const Title = styled.h2`
   font-weight: 200;

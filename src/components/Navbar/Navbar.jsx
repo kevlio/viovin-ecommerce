@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState }  from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+
 
 
 
@@ -20,15 +21,18 @@ const Wrapper = styled.div`
   padding: 1em 1em;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #8C7DA2;
+  border-bottom: 1px solid #9B753A;
 `;
 const Left = styled.div`
   flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-`;
 
+`;
+const Center = styled.div`
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+`
 const linkStyle = {
   textDecoration: "none",
   margin: 0,
@@ -37,8 +41,8 @@ const linkStyle = {
 };
 
 const Logo = styled.img`
- max-height: 8em;
- border-right: 1px solid #8C7DA2;
+ max-height: 10em;
+ 
 
 `;
 const Right = styled.div`
@@ -53,7 +57,7 @@ const MenuItem = styled.p`
   font-size: 18px;
   cursor: pointer;
   margin-left: 25px;
-  color: #8C7DA2;
+  color: #9B753A;
   letter-spacing: 0.05;
   padding-left: 1em;
   padding-right: 1em;
@@ -62,10 +66,10 @@ const MenuItem = styled.p`
 const Button = styled.button`
   align-items: center;
   background-color: transparent;
-  border: 0.1px solid #8C7DA2;
+  border: 0.1px solid #9B753A;
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  color: #8C7DA2;
+  color: #9B753A;
   cursor: pointer;
   display: inline-flex;
   font-size: 16px;
@@ -83,18 +87,23 @@ const Button = styled.button`
 
 
 function Navbar() {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+
+  
   return (
     <Container>
       <Wrapper>
         <Left>
-        <Link to="/Home" style={linkStyle}>
+      
+        </Left>
+       <Center>
+       <Link to="/" style={linkStyle}>
         
         <Logo src="https://i.ibb.co/kDLkfBx/Dore-Baguette-Couronne-Ico-ne-de-Cercle-Clerge-Logo-2-removebg-preview.png"></Logo>
         </Link>
-        </Left>
-       
+       </Center>
         <Right>
-        <Link to="/" style={linkStyle}>
+        <Link to="/viner" style={linkStyle}>
             <MenuItem>VÅRA VINER</MenuItem>
           </Link>
           <Link to="/" style={linkStyle}>

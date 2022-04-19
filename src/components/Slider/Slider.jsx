@@ -35,17 +35,18 @@ import {
     return (
       <Container>
         <Arrow direction="left" onClick={() => handleClick("left")}>
-          <ArrowBackIosNewRounded />
+          <ArrowBackIosNewRounded sx={{color: "shadow"}}/>
         </Arrow>
         <Wrapper slideIndex={slideIndex}>
+          
           {sliderItems.map((item) => (
             <Slide bg={item.bg} key={item.id}>
               <ImgContainer>
                 <Image src={item.img} />
               </ImgContainer>
               <InfoContainer>
+              <Subtitle>{item.subtitle}</Subtitle>
                 <Title>{item.title}</Title>
-                <Subtitle>{item.subtitle}</Subtitle>
                 <Description>{item.desc}</Description>
                 <Link to="/">
                   <Button>LÄS MER</Button>
