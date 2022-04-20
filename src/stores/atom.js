@@ -7,3 +7,8 @@ export const productState = atom({
 
 })
 export default productState;
+
+export const filterState = atom({
+    key: "filterState",
+    default: [],
+})

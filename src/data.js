@@ -37,6 +37,7 @@ export const sliderItems = [
       sort: "50%  GRENACHE NOIR + 40% SYRAH + 10% VIOGNIER",
       year: "ÅRSGÅNG 2021",
       bg: "fffff",
+      category: "rose",
     },
     {
       id: 1,
@@ -47,6 +48,7 @@ export const sliderItems = [
       sort: "50%  GRENACHE + 30% ROUSSANE + 20% GRENACHE",
       year: "ÅRSGÅNG 2021",
       bg: "fbf0f4",
+      category: "white",
     
     },
     {
@@ -58,6 +60,7 @@ export const sliderItems = [
       sort: "70%  SYRAH + 30% GRENACHE",
       year: "ÅRSGÅNG 2020",
       bg: "fcf1ed",
+      category: "red",
     },
     {
         id: 3,
@@ -68,6 +71,7 @@ export const sliderItems = [
         sort: "VIOGNIER + GRENACHE BLANC + VERMENTINO",
         year: "ÅRSGÅNG 2021",
         bg: "fffff",
+        category: "white",
       },
       {
         id: 4,
@@ -88,6 +92,7 @@ export const sliderItems = [
         sort: "50%  GRENACHE + 50% SYRAH",
         year: "ÅRSGÅNG 2020",
         bg: "fbf0f4",
+        category: "rose",
       },
       {
         id: 6,
@@ -98,6 +103,7 @@ export const sliderItems = [
         sort: "50%  MERLOT + 50% CABERNET - SAUVIGNON",
         year: "ÅRSGÅNG 2019",
         bg: "fffff",
+        category: "red",
       },
       {
         id: 7,
@@ -108,6 +114,7 @@ export const sliderItems = [
         sort: "50%  GRENACHE + 50% SYRAH",
         year: "ÅRSGÅNG 2020",
         bg: "fcf1ed",
+        category: "rose",
       },
   ];
 

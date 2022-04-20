@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { wineList } from "../../data";
+import { filterState } from "../../stores/atom";
+import { useRecoilValue } from "recoil";
 
 const Container = styled.div `
 display: flex;
@@ -47,7 +49,8 @@ padding: 1.5em;
 `;
 
 function ProductContainer() {
- 
+  const filter = useRecoilValue(filterState);
+  console.log(filter);
   return (
      <Container>
          {wineList.map((wine) => {
