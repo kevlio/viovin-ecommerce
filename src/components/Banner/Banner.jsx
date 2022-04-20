@@ -32,7 +32,7 @@ function Banner() {
       <BannerContainer>
         <BannerImage>
           <BannerText>
-            Vi distribuerar vin av finaste kvalite, noga utvalda ifrån södra
+            Vi distribuerar vin av finaste kvalitet, noga utvalda från södra
             Frankrike.
           </BannerText>
         </BannerImage>
