@@ -1,14 +1,12 @@
-import {atom} from "recoil";
+import { atom } from "recoil";
 
 export const productState = atom({
- key: "productState",
- default: [],
-
-
-})
+  key: "productState",
+  default: [],
+});
 export default productState;
 
 export const filterState = atom({
-    key: "filterState",
-    default: [],
-})
+  key: "filterState",
+  default: [],
+});
